@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<form>
+		<center>
+		<h1>Masukkan Text</h1>
+		<textarea id="text" cols="50" rows="5"></textarea>
+		<br>			
+		<input type="button" value="Jumlah" onclick="hitung()">
+		<input type="text" id="total" readonly>
+	</form>
+
+	<script type="text/javascript">
+		function hitung() {
+			var kalimat = document.getElementById('text').value
+			var kata=1;
+			for(int i=0; i<kalimat.length; i++){
+				if(document.getElementById('text')[i].value==" "){
+					kata++;
+				}
+			}
+			document.getElementById('total').value = kata;
+		}
+	</script>
+</body>
+</html>
